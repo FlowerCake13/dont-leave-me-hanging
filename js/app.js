@@ -2,13 +2,14 @@ document.body.addEventListener('keydown', createLetters)
 
 var alpha = ["a","b","c","d","e","f","g","h","i","j","k","l",
 "m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-var wordBank = ["hi", "cake"];
-var emptyString = "";
+var wordBank = ["hi", "cake", "ok", "cupcake", "bunny", "unicorn", "nugget", "tacos", "bee", "potatoes", "watermelon",
+"apple", "turtle", "flower"];
+var otherWordToGuess = "";
 var emptyArr = [];
 var wordToGuess = "";
 
 function gameStart() {
-	var randomNum = Math.floor(Math.random() * (2-0) + 0);
+	var randomNum = Math.floor(Math.random() * wordBank.length);
 	document.getElementById('letter-container').innerHTML = alpha;
 	wordToGuess = wordBank[randomNum];
 	for (var i = 0; i < wordBank[randomNum].length; i++){
@@ -30,16 +31,17 @@ function createLetters(e) {
 			document.getElementById('guesses-container').innerHTML += alpha[i];
 			index = i;
 			alpha.splice(index, 1);
-			document.getElementById('letter-container').innerHTML = alpha;
+			document.getElementById('letter-container').innerHTML = alpha.join(" ");
 		}
 	}
 }
 
 function checkForWord(letter) {
 	for (var i = 0; i < wordToGuess.length; i++){
-		if (letter === wordToGuess[i]) {
-			emptyArr = letter;
-			document.getElementById('word-container').innerHTML = emptyArr;
+		if (wordToGuess[i] === letter) {
+			emptyArr[i] = letter;
+			document.getElementById('word-container').innerHTML = emptyArr.join(" ");
+			document.getElementById('word-container').style.color = 'blue';
 		}
 	}
 }
