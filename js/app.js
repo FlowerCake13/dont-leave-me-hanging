@@ -1,9 +1,7 @@
 document.body.addEventListener('keydown', createLetters)
 
-var alpha = ["a","b","c","d","e","f","g","h","i","j","k","l",
-"m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-var wordBank = ["hi", "cake", "ok", "cupcake", "bunny", "unicorn", "nugget", "tacos", "bee", "potatoes", "watermelon",
-"apple", "turtle", "flower"];
+var alpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+var wordBank = [ "apple", "bee", "bunny", "banana", "bacon", "butterfly", "bear", "cake", "cupcake", "chocolate", "cookie", "camera", "chick", "cat", "dog", "donut", "egg", "flower", "fish", "grapes", "guitar", "hi", "ice cream", "joke", "klutz", "lemon", "mango", "muisc", "nugget", "orange", "ok", "potatoes", "piano", "pineapple", "panda", "pig", "quit", "rainbow", "special", "starberry", "tacos", "turtle", "trumpet", "ukulele", "violin", "watermelon", "xylophone", "yogurt", "zebra"];
 var otherWordToGuess = "";
 var emptyArr = [];
 var wordToGuess = "";

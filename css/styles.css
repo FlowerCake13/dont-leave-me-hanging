@@ -23,12 +23,16 @@ h1:hover{
 }
 
 @keyframes pulse{
-	0%{
+	15%{
 		color: blue;
 	}
 
-	100%{
+	90%{
 		color: red;
+	}
+	
+	100%{
+		color: black;
 	}
 }
 
