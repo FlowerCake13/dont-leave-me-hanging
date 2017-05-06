@@ -4,8 +4,43 @@ body{
 }
 
 h1:hover{
-	animation: bounce 2s;
+	/*animation: bounce 2s;*/	
 	animation: pulse 5s infinite;
+}
+
+#word-container{
+	border-style: double;
+	border-width: 5px;
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	font-size: 18px;
+	background-color: white;
+}
+
+#letter-container{
+	border-style: double;
+	border-width: 5px;
+	width: 375px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	font-size: 18px;
+	background-color: white;
+}
+
+#guesses-container{
+	border-style: double;
+	border-width: 5px;
+	width: 375px;
+	margin: auto;
+	font-size: 18px;
+	background-color: white;
+}
+
+#word{
+	font-size: 25px;
 }
 
 @keyframes bounce{
@@ -24,45 +59,14 @@ h1:hover{
 
 @keyframes pulse{
 	15%{
-		color: blue;
+		color: DarkBlue;
 	}
 
-	90%{
-		color: red;
+	85%{
+		color: #0000f2;
 	}
 	
 	100%{
 		color: black;
 	}
-}
-
-#word-container{
-	border-style: solid;
-	border-width: 1px;
-	width: 150px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 10px;
-	font-size: 18px;
-	background-color: white;
-}
-
-#letter-container{
-	border-style: solid;
-	border-width: 1px;
-	width: 375px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 10px;
-	font-size: 18px;
-	background-color: white;
-}
-
-#guesses-container{
-	border-style: solid;
-	border-width: 1px;
-	width: 375px;
-	margin: auto;
-	font-size: 18px;
-	background-color: white;
 }
